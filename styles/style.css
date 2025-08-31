@@ -2,7 +2,7 @@
     --color-negro: #000;
     --color-gris: #e1e1e1;
     --color-blanco: #ffffff;
-    
+
 
     --transition: all 250ms ease;
 }
@@ -18,7 +18,7 @@ body {
     font-size: 62.5%;
     line-height: 1.5;
     background-color: var(--color-blanco);
-  
+
 
 }
 
@@ -122,7 +122,6 @@ img {
 }
 
 .navbar__links.active {
-    transform: all 250ms ease;
     display: flex;
 }
 
@@ -166,7 +165,7 @@ img {
     cursor: pointer;
     position: absolute;
     z-index: 20;
-    right: 360px;
+    right: 260px;
     top: 20px;
     color: black;
     font-size: 1.5rem;
@@ -198,7 +197,7 @@ img {
     transition: all 250ms ease;
 }
 
-.navbar__submenu.active{
+.navbar__submenu.active {
     display: flex;
     transition: all 250ms ease;
 }
@@ -212,6 +211,47 @@ img {
 .navbar__item {
     width: 100%;
 }
+
+.carrito {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 1px solid black;
+    padding: 1rem;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    position: absolute;
+    min-height: 100vh;
+    width: 80vw;
+    max-width: 400px;
+    max-height: 600px;
+    overflow-x: auto;
+    z-index: 6000;
+    background-color: white;
+}
+
+.carrito.active {
+    display: flex;
+}
+
+.btn-vaciar-carrito {
+    padding: .8rem 1.5rem;
+    background-color: black;
+    color: white;
+    border-radius: 30px;
+
+}
+
+.vaciar-carrito {
+    padding: 1rem 2rem;
+    background-color: black;
+    color: white;
+}
+
+.header__shopping-icon {}
+
 /* HERO */
 
 .hero-desliz {
@@ -295,8 +335,8 @@ img {
 
 .card__text-container {
     position: absolute;
-    bottom: 5px;  
-    left: 10px; 
+    bottom: 5px;
+    left: 10px;
 }
 
 .card__text {
@@ -317,21 +357,21 @@ img {
 }
 
 .grid-1__card:nth-child(1) {
-        background-image: linear-gradient(to right, rgba(0,0,0,.2)),url(../assets/section-grid-1.webp);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, .2)), url(../assets/section-grid-1.webp);
 }
 
 .grid-1__card:nth-child(2) {
-        background-image: linear-gradient(to right, rgba(0,0,0,.2)),url(../assets/section-grid-2.webp);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, .2)), url(../assets/section-grid-2.webp);
 }
 
 
 .grid-1__card:nth-child(3) {
-        background-image: linear-gradient(to right, rgba(0,0,0,.2)),url(../assets/section-grid-3.webp);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, .2)), url(../assets/section-grid-3.webp);
 }
 
 
 .grid-1__card:nth-child(4) {
-        background-image: linear-gradient(to right, rgba(0,0,0,.2)),url(../assets/section-grid-4.webp);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, .2)), url(../assets/section-grid-4.webp);
 }
 
 /* NWE */
@@ -362,10 +402,10 @@ img {
 }
 
 .carrusel::-webkit-scrollbar {
-  display: none;
+    display: none;
 }
 
-.arrow-slide  {
+.arrow-slide {
     position: absolute;
     font-size: 1rem;
     color: black;

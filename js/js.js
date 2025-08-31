@@ -4,21 +4,30 @@ const hambur = document.querySelector(".header__menu-hamburg-icon");
 const menu = document.querySelector(".navbar__links");
 const link = document.querySelectorAll(".navbar__link");
 const cruz = document.querySelector(".icon__x");
+const carrito = document.querySelector(".carrito");
+const iconoCarrito = document.querySelector(".header__shopping-icon");
 
 hambur.addEventListener('click', () => {
     menu.classList.toggle('active');
     cruz.classList.toggle('opacity');
 })
 
-menu.addEventListener('click', () => {
-    menu.classList.toggle('active');
-    cruz.classList.toggle('opacity');
+iconoCarrito.addEventListener('click', () => {
+    carrito.classList.toggle('active');
 })
+
 
 document.addEventListener('click', (e) => {
     if (!menu.contains(e.target) && !hambur.contains(e.target)) {
         menu.classList.remove('active');
         cruz.classList.remove('opacity');
+    }
+})
+
+
+document.addEventListener('click', (e) => {
+    if (!carrito.contains(e.target) && !iconoCarrito.contains(e.target)) {
+        carrito.classList.remove('active');
     }
 })
 
