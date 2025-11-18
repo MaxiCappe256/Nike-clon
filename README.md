@@ -1,5 +1,3 @@
-<img width="486" height="951" alt="{A759BAAC-FBCD-4634-AB49-0523C92D38E9}" src="https://github.com/user-attachments/assets/da2750b9-2f79-4740-9776-636a20d883cf" /># 🏷️ Clon de Página Nike (Proyecto Educativo)
-
 Este proyecto es un **clon educativo** de la página oficial de Nike, creado con el objetivo de practicar y mejorar habilidades de desarrollo web.  
 No tiene fines comerciales ni se usa para venta de productos reales. (solo responsive)
 
